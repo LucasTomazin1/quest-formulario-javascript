@@ -1,0 +1,106 @@
+body{
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(98,130,229,1) 0%, rgba(223,101,150,1) 100%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 110px;
+    gap: 60px;
+}
+
+.conteudo h1 {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: left;
+    color: #ffffff;
+}
+
+.conteudo p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    color: #FFFFFF;
+    width: 300px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 378px;
+    gap: 15px;
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.campo {
+    width: 298px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding: 9px;
+}
+
+.campo-preenchido {
+    border: 1px solid #00C22B;
+}
+
+.campo::placeholder {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.campo.mensagem {
+    Height: 100px;
+    resize: none;
+}
+
+.formulario p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.button {
+    width: 298px;
+    height: 41px;
+    background: #3CCC87;
+    border: none;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.required {
+    opacity: 0;
+    font-size: 8px;
+    font-weight: 400;
+    color: #F52E2E;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.formulario .button:hover {
+    transition: .3s ease-in-out;
+    background-color: #3CCC70;
+    cursor: pointer;
+}
+
+.formulario .campo.erro-validacao {
+    border: 2px solid #F52E2E;
+}
+
+.formulario .campo.campo-preenchido {
+    border: 2px solid #00C22B;
+}
+.mostrar {
+    opacity: 1;
+}
